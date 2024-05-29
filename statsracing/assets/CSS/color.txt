@@ -1,0 +1,7 @@
+color_f1 = "#FF1801"
+color_f2 = "#1C78FB"
+color_f3 = "#676766"
+color_gpexp = "#FF014E"
+color_archives = "#A6A6A6"
+color_wec = "#8BC63E"
+color_elms = "#EF761E"

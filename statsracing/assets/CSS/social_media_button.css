@@ -1,0 +1,135 @@
+:root {
+    --color-instagram-pink: #C32AA3;
+    --color-instagram-yellow: #FFCC63;
+    --color-twitter-light: #1DA1DE  ;
+    --color-twitter-dark: #1DA1F2;
+    --color-facebook-light: #3B5998;
+    --color-facebook-dark: #4267B2 ;
+    --color-linkedin-light: #00A0DC;
+    --color-linkedin-dark: #007BB5;
+    --color-tiktok-pink: #FF0050;
+    --color-tiktok-blue: #00F2EA;
+    --color-youtube: #FF0000;
+    --color-twitch: #6441A5; 
+    --color-black: #000000;
+}
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  transform: scale(0.8);
+}
+.social-btns .btn.instagram:before {
+  background: linear-gradient(to bottom, var(--color-instagram-pink), var(--color-instagram-yellow));
+}
+.social-btns .btn.instagram .fa {
+  color: var(--color-instagram-pink);
+}
+.social-btns .btn.x-twitter:before {
+  background-color: var(--color-black);
+}
+.social-btns .btn.x-twitter .fa {
+  color: var(--color-black);
+}
+.social-btns .btn.facebook:before {
+  background: linear-gradient(to bottom, var(--color-facebook-light), var(--color-facebook-dark));
+}
+.social-btns .btn.facebook .fa {
+  color: var(--color-facebook-light);
+}
+.social-btns .btn.globe:before {
+  background-color: var(--color-black);
+}
+.social-btns .btn.globe .fa {
+  color: var(--color-black);
+}
+.social-btns .btn.wikipedia-w:before {
+  background-color: var(--color-black);
+}
+.social-btns .btn.wikipedia-w .fa {
+  color: var(--color-black);
+}
+.social-btns .btn.youtube:before {
+  background-color: var(--color-youtube);
+}
+.social-btns .btn.youtube .fa {
+  color: var(--color-youtube);
+}
+.social-btns .btn.tiktok:before {
+  background: linear-gradient(to left, var(--color-tiktok-pink), var(--color-tiktok-blue));
+}
+.social-btns .btn.tiktok .fa {
+  background: linear-gradient(to left, var(--color-tiktok-pink), var(--color-tiktok-blue)); 
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.social-btns .btn.threads:before {
+  background-color: var(--color-black);
+}
+.social-btns .btn.threads .fa {
+  color: var(--color-black);
+}
+.social-btns .btn.twitch:before {
+  background-color: var(--color-twitch);
+}
+.social-btns .btn.twitch .fa {
+  color: var(--color-twitch);
+}
+.social-btns .btn.linkedin:before {
+  background: linear-gradient(to bottom, var(--color-linkedin-light), var(--color-linkedin-dark));
+}
+.social-btns .btn.linkedin .fa {
+  background: linear-gradient(to bottom, var(--color-linkedin-light), var(--color-linkedin-dark)); 
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  transform: scale(1);
+}
+.social-btns {
+  padding: 5px;
+  height: 60px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  margin: 5px 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 24px;
+  vertical-align: middle;
+}

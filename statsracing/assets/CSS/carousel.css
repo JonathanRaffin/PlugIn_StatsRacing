@@ -1,0 +1,54 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.carousel_container::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.carousel_container {
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0);
+} 
+
+.carousel_item {
+    float: left;
+}
+
+.carousel_next, .carousel_prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-image: url(../Images/CSS/right.svg);
+    background-position: center;
+    background-size: 20px 20px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    right: 10px;
+    box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.carousel_next:hover, .carousel_prev:hover {
+    transform: scale(1.2);
+}
+
+.carousel_prev {
+    background-image: url(../Images/CSS/left.svg);
+    right: auto;
+    left: 10px;
+}
+
+.carousel_next_hidden, .carousel_prev_hidden {
+    opacity: 0;
+    display: none;
+}

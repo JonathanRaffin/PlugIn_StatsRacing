@@ -1,0 +1,173 @@
+/* Importations */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+@import url('https://fonts.googleapis.com/css?family=Contrail+One');
+
+/* Varaiables */
+:root {
+    /* Formula One */
+    --color-red-bull: #000B8D;
+    --color-mercedes: #00A19B;
+    --color-alpine: #2173B8;
+    --color-alphatauri: #20394C;
+    --color-haas: #E6002B;
+    --color-williams: #00A0DE;
+    --color-ferrari: #EF1A2D;
+    --color-mclaren: #FF8000;
+    --color-alfa-romeo: #A42134;
+    --color-aston-martin: #037A68;
+
+    --color-red_bull: #000B8D;
+    --color-alfa: #A42134;
+    --color-aston_martin: #037A68;
+
+    /* Formula 2, Formula 3 & F1 Academy */
+    --color-mp-motorsport: #FF6700;
+    --color-rodin-carlin: #c4a84b;
+    --color-art-grand-prix: #ED1C24;
+    --color-prema-racing: #EF0101;
+    --color-hitech-pulse-eight: #414042;
+    --color-dams: #03abf1;
+    --color-invicta-virtuosi-racing: #1D4885;
+    --color-phm-racing: #064E86;
+    --color-trident: #283A8E;
+    --color-van-amersfoort-racing: #f55702;
+    --color-campos-racing: #CB200F;
+    --color-jenzer-motorsport: #ff2f18;
+    --color-mercantile-campos-racing: var(--color-campos-racing);
+
+    /* GP Explorer */
+    --color-oscaro: #016;
+    --color-modern-warfare: #95c33d;
+    --color-world-of-tanks: #ff7e00;
+    --color-pubg-mobile: #f63e9a;
+    --color-igraal: #fd5a13;
+    --color-black-adam: #f7e02e;
+    --color-fruitz: #fc537f;
+
+    --color-samsumg: #42a8bf;
+    --color-gentle-mates: #ff4980;
+    --color-alpine-rose: #d1528b;
+    --color-nord-vpn: #4480fe;
+    --color-wargaming: #39aeaf;
+    --color-cupra: #c2bf2d;
+    --color-alpine-bleu: #1d61c7;
+    --color-mouv: #00fb8e;
+    --color-subway: #008952;
+    --color-crunchyroll: #f47521;
+    --color-rhinoshield: #FFEF00;
+    --color-overwatch: #f06414;
+
+    /* Transition */
+    --time-transition: 0.5s;
+}
+
+html, body{
+    overflow-x: hidden;
+    overflow-clip-margin: 100px;
+}
+
+.str_f1_drivers, .str_f2_drivers, .str_f3_drivers {
+    margin: 20px;
+}
+
+.str_driver_box {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 210px;
+    box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+    border-radius: 0.7rem;
+    transition: background-color var(--time-transition), color var(--time-transition);
+}
+
+.str_driver_box:hover {
+    color: white;
+}
+
+img {
+    display: flex;
+    z-index: 1;
+    margin-top: -25px;
+}
+
+.str_driver_src_img {
+    position: relative;
+    font-size: 13px;
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+    left: 155px;
+    transition: color var(--time-transition);
+}
+
+.str_driver_box:hover > .str_driver_src_img {
+    color: white;
+}
+
+.str_driver_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2px;
+}
+
+.str_driver_firstName, .str_driver_name, .str_driver_teams, .str_driver_points {
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.str_driver_firstName { 
+    padding-top: 10px; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+
+.str_driver_name { 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+
+.str_driver_flag {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+    align-self: center;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+}
+
+.str_driver_teams { 
+    padding-left: 10px;
+    padding-bottom: 10px; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    font-size: 20px;
+    transition: color var(--time-transition);
+}
+
+.str_driver_points {
+    padding-bottom: 10px; 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+}
+
+#str_driver_seemore {
+    width: 210px; 
+    height: 351px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 45%;
+}

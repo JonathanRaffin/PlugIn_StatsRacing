@@ -1,0 +1,126 @@
+/* Importations */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+@import url('https://fonts.googleapis.com/css?family=Contrail+One');
+
+/* Varaiables */
+:root {
+    --color-red-bull: #000B8D;
+    --color-mercedes: #00A19B;
+    --color-alpine: #2173B8;
+    --color-alpha-tauri: #20394C;
+    --color-haas: #E6002B;
+    --color-williams: #00A0DE;
+    --color-ferrari: #EF1A2D;
+    --color-mclaren: #FF8000;
+    --color-alfa-romeo: #A42134;
+    --color-aston-martin: #037A68;
+    --time-transition: 0.5s;
+}
+
+html, body{
+    overflow-x: hidden;
+    overflow-clip-margin: 100px;
+}
+
+.str_f1_teams {
+    margin: 20px;
+}
+
+.str_team_box {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 210px;
+    box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+    border-radius: 0.7rem;
+    transition: background-color var(--time-transition), color var(--time-transition);
+}
+
+.str_team_box:hover {
+    color: white;
+}
+
+img {
+    display: flex;
+    z-index: 1;
+    margin-top: -25px;
+}
+
+.str_team_src_img {
+    position: relative;
+    font-size: 13px;
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+    left: 160px;
+    transition: color var(--time-transition);
+}
+
+.str_team_box:hover > .str_team_src_img {
+    color: white;
+}
+
+.str_team_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2px;
+}
+
+.str_team_name, .str_team_chassis, .str_team_base, .str_team_points {
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.str_team_name { padding-top: 10px; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+
+.str_team_chassis { grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+
+.str_team_flag {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+    align-self: center;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+}
+
+.str_team_base { 
+    padding-left: 10px;
+    padding-bottom: 10px; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    transition: color var(--time-transition);
+}
+
+.str_team_points {
+    padding-bottom: 10px; 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+}
+
+#str_team_seemore {
+    width: 210px; 
+    height: 351px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 45%;
+}

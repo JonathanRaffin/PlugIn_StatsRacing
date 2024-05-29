@@ -1,0 +1,105 @@
+/* Importations */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+@import url('https://fonts.googleapis.com/css?family=Contrail+One');
+
+
+html, body{
+    overflow-x: hidden;
+    overflow-clip-margin: 100px;
+}
+
+.str_circuits {
+    margin: 20px;
+}
+
+.str_circuit_box {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 210px;
+    box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+    border-radius: 0.7rem;
+    transition: background-color var(--time-transition), color var(--time-transition);
+}
+
+img {
+    display: flex;
+    z-index: 1;
+}
+
+.str_circuit_src_img, .str_circuit_wiki {
+    position: relative;
+    font-size: 13px;
+    color: gray;
+    text-align: right;
+    text-decoration: none;
+    padding: 5px;
+    padding-right: 2px;
+    padding-right: 0px;
+    left: 150px;
+    transition: color var(--time-transition);
+}
+
+img{
+    margin-top: -25px;
+}
+
+.str_circuit_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2px;
+}
+
+.str_circuit_length, .str_circuit_turns, .str_circuit_name {
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.str_circuit_length { 
+    padding-top: 10px; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+
+.str_circuit_turns { 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+
+.str_circuit_flag {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+    align-self: center;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+}
+
+.str_circuit_name { 
+    padding-left: 10px;
+    padding-bottom: 10px; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    transition: color var(--time-transition);
+}
+
+#str_circuit_seemore {
+    width: 210px; 
+    height: 300px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30%;
+}
+
